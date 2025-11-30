@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacto - Emisora Comunitaria</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header small">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Logo Emisora" class="logo"/>
+        <div class="brand-text">
+          <h1>Emisora Comunitaria</h1>
+        </div>
+      </a>
+
+      <button id="navToggle6" class="nav-toggle" aria-label="Abrir menú">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="mainNav6" class="main-nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="historia.html" class="nav-link">Historia</a>
+        <a href="repertorio.html" class="nav-link">Repertorio</a>
+        <a href="programacion.html" class="nav-link">Programación</a>
+        <a href="locutores.html" class="nav-link">Locutores</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <h2>Contacto</h2>
+      <p>Si deseas participar, enviar sugerencias musicales o solicitar espacios, escríbenos:</p>
+
+      <form class="contact-form" action="mailto:contacto@emisora.com" method="post" enctype="text/plain">
+        <label for="name">Nombre</label>
+        <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="tu@email.com" required />
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="6" placeholder="Escribe tu mensaje..." required></textarea>
+
+        <button type="submit" class="btn">Enviar mensaje</button>
+      </form>
+
+      <p class="contact-alt">O envíanos un correo directamente a <a href="mailto:contacto@emisora.com">contacto@emisora.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer small">
+    <div class="container footer-grid">
+      <div>
+        <p>© 2025 Emisora Comunitaria</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
